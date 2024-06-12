@@ -1,0 +1,215 @@
+body{background-color: #FFF5D0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    color: #061511;
+    font-family: 'tomorow';
+    width: 100%;
+   
+}
+
+
+h1{font-family: 'jost';
+    font-size: 1.5em;
+    text-align: left;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;}
+
+h2{font-family: 'jost';
+    padding-left: 5em;
+    font-size: 1.2em;}
+
+a{color: #061511;
+        text-decoration: none;}
+
+button {background-color: #FF8C42;
+            border-radius: 25px;}
+
+#navbar {margin: 0;
+        top:0;
+        width: 100%;
+        height: 80px;
+        font-family: 'tomorow-thin', sans-serif;
+        background-color: white;
+        position:sticky;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;}
+    #search { border-radius: 5px;
+        border-color: #FF8C42;}
+
+.hero {background-color: #B0E246;
+    width: 100%;
+    height: 645px;}
+    #hero-left {justify-content: center;
+            padding: 120px;}
+        .Cassé {
+        position: absolute;
+        width:225 ;
+        font-family:'jost' ;
+        font-size: 1.5em;
+        background-color:#18A0FB;
+        color: #061511;
+        transform: rotate(-4.5deg);}        
+        #bero {margin-top: 2em;
+            position: inherit;
+            margin-bottom: 2em;}
+        #qualiRepar {margin-top:4em;
+            position: relative;
+            background-color: #D9F7FA;
+            width: 40%;
+            height: 15%;
+            border-radius: 15px;}
+        #label{margin-left: 65%;}
+    #hero-right {width:50% ;
+            float: right;
+        margin-top: -35%;}
+        #atelier {margin-top:-5em;
+        position: absolute;
+        border-radius: 16px;
+        width: 550px;
+        Height:385px;}
+        #Robert {height: 525px;
+        width: 745px;
+        position: sticky;
+        margin-top: -7em;
+        transition: transform 0.5s ease-in-out;}
+
+#stat{margin-top:-4em;
+    position: absolute;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 15px;
+    width: 80%;
+    height: 8em;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2em;}
+    .chiffre{padding-top: 2em;
+        display:flex;
+    flex-direction: row;}
+    .etiquette{  padding: 1em; 
+        height: 1em;
+        width:2em ;
+        font-size: 1.2em;  
+        background-color:#18A0FB;
+        color: #061511;
+        transform: rotate(-4.5deg);}
+
+
+#materiel{margin-top: 8em;
+        margin-bottom: 2em;
+        width: 100%;
+        padding-bottom: 2em;}    
+    #machine{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;}
+            .electro{height: 10em;
+                width: 20em;}
+        .electromenager{text-align: center;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0em 0.2em 0em rgba(0, 0, 0, 0.5);}
+            
+#marques{margin-bottom: 2em;
+        padding-top: 3%;
+        padding-bottom: 5%;
+        height: 30%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;}
+        .mrk{height:4em;
+            width: 8em;
+            background-color: white;
+            border-radius: 8px;}
+
+#temoignage{
+    background-color: #D9F7FA;
+    padding-bottom: 3em;}
+    #raport{
+            padding-right:5% ;
+             display: flex;
+            justify-content: center;
+            width: 90%;}
+        .madame{padding-top: 1.5em;
+                height: 35%;
+                width: 40%;}
+        .parler{height:10%;
+                width: 40%;
+                margin: -1.5em;
+                padding-top: 1em;
+                padding-bottom:3em ;
+                padding-left: 1em;
+                text-align: left;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius:25px ;
+                background-color: white;
+                box-shadow:0em 0.2em 0em rgba(0, 0, 0, 0.5);}
+                #ligne {background-color: #B0E246;
+                        height: 0.1em;
+                        width: 80%;}
+                #signature{color: #B0E246;}
+
+.prk{margin-top: 2em;
+    width: 100%;}
+    #pourquoi{;
+        display: flex;
+            flex-direction: row;
+        justify-content: center;}
+        #prkG{height: 25%;
+            width: 40%;
+            text-align: left;}
+            #text{margin-top: 2em;}
+            #prkb{
+                margin-top: 5em;
+                height: 2.5em;
+            border-radius: 5px;}
+        #prkD{height: 25%;
+        width: 40%;}
+            .object{height: 35%;
+                width: 30%;}
+
+.statbis{margin-top: 2em;
+        font-size: 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+         background-color:white;}
+    #dechets{padding-top: 0.7em;
+        height: 2em;
+        width: 6em;
+        background-color: #18A0FB;
+        transform: rotate(-4.5deg);}    
+    
+.services{background-color: #B0E246;}
+    #butons{margin-top: 3em;
+        margin-bottom: 3em;
+        padding-left: 10%;
+        padding-right:10% ;
+        height: 2em;        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+         width: 80%;}
+        .serv{background-color: #FFF5D0;
+            height: 10em;
+            width: 30%;
+            color: #061511;
+            box-shadow: 0em 0.2em 0em rgba(0, 0, 0, 0.5);}
+            h4{color: #FF8C42;}      
+            .picto{height: 3em;
+                    width: 3em;
+                    float: left;
+                    margin-top: 3em;}
+    #boutique{padding-top: 3em;}
+        h3{margin-left: 5%;}
+        .carte{margin-left: 5%;
+            margin-right: 15%;}
+        li{margin-left: 5%;}
