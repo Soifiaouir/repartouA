@@ -9,72 +9,104 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    
-</head>
+    </head>
+
 <body>
     <header>
+        <section class="menumobile">
+            <img src="img/logorepartout.png" alt="Logo" id="logomobile">
+            <div class="mderoulant">
+                <img src="img/menu.png" alt="menu" id="btmenu">
+                <div class="deroulant">
+                    <a href="#faire_reparer">Faire réparer</a>
+                    <a href="#tout_sur_reparer">Tout sur Répar’tou</a>
+                    <button type="button">Contactez-nous</button>
+                </div>
+            </div>
+        </section>
+
         <section class="menu">
-        <div id="navbar">
-            <img src="img/logo repartout.png" alt="Logo">
+            <img src="img/logorepartout.png" alt="Logo">
             <a href="#faire_reparer">Faire réparer</a>
             <a href="#tout_sur_reparer">Tout sur Répar’tou</a>
             <form action="/search" method="get">
-                <input id="search" type="text" name="query" placeholder="Que recherchez-vous ?">
+                <input id="search" type="text" name="query" placeholder="Que recherchez-vous ? "  >
             </form>
             <button type="button">Contactez-nous</button>
-        </div></section>
+        </section>
     </header>
 
     <main>
         <section class="hero">
             <div id="hero-left">
                 <div class="Cassé"><b>Cassé ?</b></div>
-                    <h1>Nous le réparons</b></h1>
-                <p>C'est moins cher et plus écologique</p>
+                    <h1>Nous le réparons</h1>
+                    <div id="texthero"><p>C'est moins cher et plus écologique</p></div>
                 <button id="bero" type="button">Contactez-nous</button>
+                
                 <div id="qualiRepar">
-                    <p><b>On est officiellement certifié qualiRepar</b><br>
-                       Bénéficiez d’une aide de -20€ à -50€ sur votre réparation. + d’infos</p>
+                    <div id="textquali"><p><b>On est officiellement certifié qualiRepar</b><br>
+                       Bénéficiez d’une aide de -20€ à -50€ sur votre réparation. + d’infos</p></div>
                     <img src="img/label.png" alt="certifié qualiRepar" id="label">
                 </div>
-                
+               
             </div>
 
             <div id="hero-right">
                 <img src="img/atelier.png" alt="atelier" id="atelier">
+                <img src="img/label.png" alt="label" class="labelmobile">
                 <img src="img/Robert.png" alt="Robert" id="Robert">
             </div>
         </section>
 
-        <section id="stat">
+        <section class="stat">
             <div class="chiffre">
-                <div class="etiquette"><b>400</b></div><p> Objets réparés</p></div>
+                <div class="etiquette1"><div class="etiquette" id="etiquette"><b>400</b></div><p> Objets réparés</p></div></div>
             <div class="chiffre">
                 <div class="etiquette"><b>10.000</b></div><p>Préférences certifiées</p></div>
             <div class="chiffre">
                 <div class="etiquette"><b>4,5/5</b></div><p>Satisfaction client</p></div>
         </section>
 
+        <section class="statmobile">
+            <div class="chiffremonile"><div class="etiquette"><b>10.000</b></div><p>Préférences certifiées</p></div>
+            <div id="lignemobile"></div>
+            <div class="chiffremobile"><div class="etiquette"><b>4,5/5</b></div><p>Satisfaction client</p></div>
+        </section>
+
         <section id="materiel">
         <h2>Que souhaitez-vous réparer ?</h2>
         <div id="machine">
-            <div class="electromenager"><img src="img/Grille pain.png" alt="Grille pain" class="electro">
+            <div class="electromenager"><img src="img/Grillepain.png" alt="Grille pain" class="electro">
                 <p><b>Petit électroménager</b></p></div>
             <div class="electromenager"><img src="img/Aspirateur.png" alt="Aspirateur" class="electro">
                 <p><b>Moyen électroménager</b></p></div>
-            <div class="electromenager"><img src="img/Machine à laver.png" alt="Machine à laver" class="electro">
+            <div class="electromenager"><img src="img/Machineàlaver.png" alt="Machine à laver" class="electro">
                 <p><b>Gros électroménager</b></p></div>
             </div>
         </section>
 
-        <section id="marques">
+        <section class="caroussel">
+            <div class="img">            
             <img src="img/dyson.png" alt="dyson" class="mrk">
             <img src="img/Krups.png" alt="Krups" class="mrk">
             <img src="img/Moulex.png" alt="Moulinex" class="mrk">
             <img src="img/SEB.png" alt="SEB" class="mrk">
             <img src="img/Sauter.png" alt="Sauter" class="mrk">
             <img src="img/Simens.png" alt="Siemens" class="mrk">
-            <img src="img/Whilpool.png" alt="Whirlpool" class="mrk">
+            <img src="img/Whilpool.png" alt="Whirlpool" class="mrk"></div>
+        </section>
+
+        <section id="prkmobile">  
+        <h2>Pourquoi Répar’tou ?</h2>
+            <p>Nous prolongeons la durée de vie de vos appareils : <br>
+                Prime de l’État (-20 à -50€)<br>
+                Entretien préventif<br>
+                Réemploi<br>
+                Recyclage<br>
+                Pour un avenir durable ♥</p>
+            <button class="prkb" type="button">Découvrir notre manifeste</button>
+            <img src="img/objrepérer.png" alt="objet réparé" class="objet">          
         </section>
 
         <section id="temoignage">
@@ -82,9 +114,9 @@
             <div id="raport">
             <img src="img/madame.png" alt="femme" class="madame">
             <div class="parler">
-                <p><b>La problématique</b><br><br>Mon lave-vaisselle Bosch SMS46KI01E ne démarrait plus et affichait un code erreur E24.<br><br>
-                <b>La réparation</b><br><br>L'intervention a été rapide et efficace. Le technicien a remplacé la pompe de vidange et a effectué un nettoyage complet des conduits.<br><br>
-                <b>Le résultat</b><br><br>Je suis très satisfaite ! Mon lave-vaisselle fonctionne parfaitement maintenant. La réparation a pris seulement 1 heure et le coût était très raisonnable, 150€.</p><br>
+                <p><b>La problématique</b>Mon lave-vaisselle Bosch SMS46KI01E ne démarrait plus et affichait un code erreur E24.</p>
+                <p><b>La réparation</b>L'intervention a été rapide et efficace. Le technicien a remplacé la pompe de vidange et a effectué un nettoyage complet des conduits.</p>
+                <p><b>Le résultat</b>Je suis très satisfaite ! Mon lave-vaisselle fonctionne parfaitement maintenant. La réparation a pris seulement 1 heure et le coût était très raisonnable, 150€.</p>
                <div id="ligne"></div>
                 <div id="signature">Natalie F. - 24/6/2024</div>
             </div></div>
@@ -94,13 +126,13 @@
             <div id="pourquoi">
                 <div id="prkG">
                 <h2>Pourquoi Répar’tou ?</h2>
-                <div id="text">
+                <div id="textprk">
                 <p>Chez Répar’tou, nous nous engageons à prolonger la durée de vie de vos appareils électroménagers et à favoriser le recyclage pour un avenir durable.<br><br><br> 
                 En réparant plutôt qu'en remplaçant, nous réduisons les déchets électroniques et soutenons l'économie circulaire. Nos techniciens qualifiés utilisent les dernières technologies pour offrir des réparations fiables, tout en sensibilisant nos clients à l'entretien préventif et aux avantages écologiques de la réparation.<br><br><br>
                 Avec un service client exceptionnel et une transparence totale, nous contribuons positivement à notre communauté locale et œuvrons ensemble pour un monde plus vert.</p></div>
-                <button id="prkb" type="button">Découvrir notre manifeste</button></div>
+                <button class="prkb" type="button">Découvrir notre manifeste</button></div>
                 <div id="prkD">
-                <img src="img/obj repérer.png" alt="objet réparé" class="objet"></div>
+                <img src="img/objrepérer.png" alt="objet réparé" class="objet"></div>
             </div>
         </section>
     
@@ -110,19 +142,19 @@
         
         <section class="services">
             <h2>Nos services</h2>
-            <div id="butons">
-                <button class="serv" type="button">
-                    <img src="img/location_on_24dp_FILL0_wght400_GRAD0_opsz24 (1).png" class="picto">
-                    <h4>En boutique</h4> 
-                    <p>Notre réparateur expert se chargera de la réparation</p></button>
-                <button class="serv" type="button">
-                    <img src="img/construction_24dp_FILL0_wght400_GRAD0_opsz24.png" class="picto">  
-                    <h4>Réparer soi-même</h4>
-                    <p>Suivez notre guide étape par étape</p></button>
-                <button class="serv" type="button">
-                    <img src="img/featured_seasonal_and_gifts_24dp_FILL0_wght400_GRAD0_opsz24.png" class="picto">
-                    <h4>Donner mon appareil</h4>
-                    <p>Dépôt en magasin<br>Reprise gratuite à domicile</p></button>
+            <div id="serv">
+                <div class="serv">
+                    <img src="img/map-marker.svg" alt="pictogramme map" class="picto">
+                    <p>En boutique<br>
+                    Notre réparateur expert se chargera de la réparation</p></div>
+                <div class="serv">
+                    <img src="img/tools.svg" alt="pictogramme outils" class="picto">  
+                    <p>Réparer soi-même<br>
+                    Suivez notre guide étape par étape</p></div>
+                <div class="serv">
+                    <img src="img/gift.svg" alt="pictogramme cadeau" class="picto">
+                    <p>Donner mon appareil<br>
+                   Dépôt en magasin<br>Reprise gratuite à domicile</p></div>
             </div>
 
             <div id="boutique">

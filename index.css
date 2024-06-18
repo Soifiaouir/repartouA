@@ -4,10 +4,10 @@ body{background-color: #FFF5D0;
     overflow-x: hidden; 
     color: #061511;
     font-family: 'tomorow';
-    width: 100%;
+    font-size: 18px;
+    max-width: 100%;
    
 }
-
 
 h1{font-family: 'jost';
     font-size: 1.5em;
@@ -21,64 +21,67 @@ h2{font-family: 'jost';
 
 a{color: #061511;
         text-decoration: none;}
+section{width: 100%;
+        padding: 120px 140px;}
 
-button {background-color: #FF8C42;
-            border-radius: 25px;}
 
-#navbar {margin: 0;
-        top:0;
-        width: 100%;
-        height: 80px;
-        font-family: 'tomorow-thin', sans-serif;
-        background-color: white;
-        position:sticky;
-        justify-content: space-evenly;
+button {background-color: #FFE500;
+        border-radius: 8px;
+        padding: 6px 20px 6px 20px;
+        height:18px; 
+        width:125px;
+        font-size: 15px;
+        text-align: center;}
+
+
+.menu{padding: 0px 40px ;
+    font-family: 'tomorow-thin', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;}
+    #search { border-radius: 8px;
+        border-color: #55701C;}
+
+
+.hero {width: 100%;
+        background-color: #B0E246;
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;}
-    #search { border-radius: 5px;
-        border-color: #FF8C42;}
-
-.hero {background-color: #B0E246;
-    width: 100%;
-    height: 645px;}
-    #hero-left {justify-content: center;
-            padding: 120px;}
+        gap:60px}
+        #hero-left{width: 100%;}
+        #hero-right{width: 100%;}
         .Cassé {
         position: absolute;
-        width:225 ;
+        width:225px ;
         font-family:'jost' ;
         font-size: 1.5em;
         background-color:#18A0FB;
         color: #061511;
-        transform: rotate(-4.5deg);}        
+        transform: rotate(-4.5deg);}  
+        .labelmobile{background-color:#D9F7FA;
+            height: 4%;
+            }      
         #bero {margin-top: 2em;
             position: inherit;
             margin-bottom: 2em;}
-        #qualiRepar {margin-top:4em;
-            position: relative;
+        #qualiRepar {padding: 20px;
             background-color: #D9F7FA;
-            width: 40%;
-            height: 15%;
-            border-radius: 15px;}
-        #label{margin-left: 65%;}
-    #hero-right {width:50% ;
-            float: right;
-        margin-top: -35%;}
-        #atelier {margin-top:-5em;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: row;}
+        #atelier {
         position: absolute;
         border-radius: 16px;
         width: 550px;
         Height:385px;}
-        #Robert {height: 525px;
-        width: 745px;
-        position: sticky;
-        margin-top: -7em;
+        #Robert {padding: 40px;
         transition: transform 0.5s ease-in-out;}
 
-#stat{margin-top:-4em;
+.stat{margin-top:-6em;
     position: absolute;
+    padding: 40px;
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 15px;
@@ -100,15 +103,26 @@ button {background-color: #FF8C42;
         color: #061511;
         transform: rotate(-4.5deg);}
 
+.statmobile{padding: 30px; 
+    width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:white;}
+        .chiffremobile{width: 50%;
+        padding: 10px;}
+        #lignemobile{background-color:#B0E246;
+            height: 1px;           
+             width: 60%;}
+        
 
-#materiel{margin-top: 8em;
-        margin-bottom: 2em;
-        width: 100%;
-        padding-bottom: 2em;}    
-    #machine{
+#materiel{width: 100%;
+        }    
+        #machine{
             display: flex;
             flex-direction: row;
-            justify-content: space-around;}
+            justify-content: space-around;
+            align-items: center;}
             .electro{height: 10em;
                 width: 20em;}
         .electromenager{text-align: center;
@@ -118,21 +132,8 @@ button {background-color: #FF8C42;
             border-radius: 12px;
             box-shadow: 0em 0.2em 0em rgba(0, 0, 0, 0.5);}
             
-#marques{margin-bottom: 2em;
-        padding-top: 3%;
-        padding-bottom: 5%;
-        height: 30%;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;}
-        .mrk{height:4em;
-            width: 8em;
-            background-color: white;
-            border-radius: 8px;}
-
 #temoignage{
-    background-color: #D9F7FA;
-    padding-bottom: 3em;}
+    background-color: #D9F7FA;}
     #raport{
             padding-right:5% ;
              display: flex;
@@ -151,7 +152,8 @@ button {background-color: #FF8C42;
                 border-top-right-radius: 25px;
                 border-bottom-right-radius:25px ;
                 background-color: white;
-                box-shadow:0em 0.2em 0em rgba(0, 0, 0, 0.5);}
+                display: flex;
+                flex-direction: column;}
                 #ligne {background-color: #B0E246;
                         height: 0.1em;
                         width: 80%;}
@@ -159,15 +161,14 @@ button {background-color: #FF8C42;
 
 .prk{margin-top: 2em;
     width: 100%;}
-    #pourquoi{;
-        display: flex;
+    #pourquoi{display: flex;
             flex-direction: row;
         justify-content: center;}
         #prkG{height: 25%;
             width: 40%;
             text-align: left;}
-            #text{margin-top: 2em;}
-            #prkb{
+            #textprk{margin-top: 2em;}
+            .prkb{
                 margin-top: 5em;
                 height: 2.5em;
             border-radius: 5px;}
@@ -176,12 +177,10 @@ button {background-color: #FF8C42;
             .object{height: 35%;
                 width: 30%;}
 
-.statbis{margin-top: 2em;
-        font-size: 2em;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-         background-color:white;}
+#prkmobile{background-color: #B0E246;
+    display: flex;
+    flex-direction: column;}
+
     #dechets{padding-top: 0.7em;
         height: 2em;
         width: 6em;
@@ -189,7 +188,7 @@ button {background-color: #FF8C42;
         transform: rotate(-4.5deg);}    
     
 .services{background-color: #B0E246;}
-    #butons{margin-top: 3em;
+    #serv{margin-top: 3em;
         margin-bottom: 3em;
         padding-left: 10%;
         padding-right:10% ;
@@ -197,19 +196,93 @@ button {background-color: #FF8C42;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        gap: 20px;
          width: 80%;}
-        .serv{background-color: #FFF5D0;
-            height: 10em;
-            width: 30%;
+        .serv{height: 130px;
+            width: 274px;
+            display: flex;
+            padding: 20px 10px 20px 30px;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            background-color:white;
             color: #061511;
-            box-shadow: 0em 0.2em 0em rgba(0, 0, 0, 0.5);}
-            h4{color: #FF8C42;}      
-            .picto{height: 3em;
-                    width: 3em;
-                    float: left;
-                    margin-top: 3em;}
+            border-radius: 8px;
+            box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08);}
+        .picto{height: 3em;
+                width: 3em;
+                float: left;
+                margin-top: 3em;}
     #boutique{padding-top: 3em;}
         h3{margin-left: 5%;}
         .carte{margin-left: 5%;
             margin-right: 15%;}
         li{margin-left: 5%;}
+
+        @media (max-width: 1440px)  {
+            
+            
+            
+        }
+        @media (min-width: 360px) {
+            .menumobile{display: none;}
+            .labelmobile{display: none;}
+            #prkmobile{display: none;}
+            #lignemobile{display: none;}
+            .statmobile{display: none;}
+            #prkmobile{display: none;}
+
+    }
+
+
+        @media (max-width: 360px) {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;}
+
+            .menu{display: none;}
+            #qualiRepar{display: none;}
+            #atelier{display: none;}
+            #texthero{display:none;}
+            .etiquette1{display: none;}
+            .stat{display: none;}
+            .prk{display: none;}
+        
+            .hero{flex-direction: column;
+                padding: 40px 30px;}
+
+            #bero{padding-bottom: 0%;}
+
+            #hero-left{display: flex;
+            flex-direction: column;
+            align-items: center;}
+
+            #hero-right{margin: 0%;
+                padding: 0%;
+                display: flex;
+                flex-direction: row;}
+
+            #Robert{height: 328px;
+                width: 228px;
+                padding: 0%;}
+
+            .statmobile{display: flex;
+            flex-direction: column;}
+
+            #machine{flex-direction: column;
+                gap: 30px;}
+
+            .butons{flex-direction: column;}
+            .electromenager{background-color:  #D9F7FA;}
+
+            #materiel{background-color: #B0E246;
+            flex-direction: column;
+            align-items: center;}
+            
+            }
+            
+
+
+        
+            
