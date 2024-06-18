@@ -5,9 +5,10 @@ body{background-color: #FFF5D0;
     color: #061511;
     font-family: 'tomorow';
     font-size: 18px;
-    max-width: 100%;
+    
    
 }
+
 
 h1{font-family: 'jost';
     font-size: 1.5em;
@@ -25,16 +26,19 @@ section{width: 100%;
         padding: 120px 140px;}
 
 
-button {background-color: #FFE500;
-        border-radius: 8px;
-        padding: 6px 20px 6px 20px;
-        height:18px; 
-        width:125px;
-        font-size: 15px;
-        text-align: center;}
+button {display: flex;
+    height: 40px;
+    padding: 6px 20px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 8px;
+    border: 1px solid #55701C;
+    background: #FFE500;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08);}
 
 
-.menu{padding: 0px 40px ;
+.menu{width: auto;
+    padding: 0px 40px ;
     font-family: 'tomorow-thin', sans-serif;
     background-color: white;
     display: flex;
@@ -44,7 +48,49 @@ button {background-color: #FFE500;
     #search { border-radius: 8px;
         border-color: #55701C;}
 
-
+.menumobile{width: 100%;
+    display: flex;
+    padding: 6px 9px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 73px;}
+    .deroulant{display: none;
+        position: absolute;
+        top: 100%; /* Place le menu déroulant juste en dessous de l'élément parent */
+        right: 0; /* Aligne le menu déroulant à droite */
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000; /* Assure que le menu déroulant est au-dessus des autres éléments */
+    }
+    .logorepar{display: flex;
+                flex-direction: row;
+            gap: none;} 
+    .mderoulant{position: relative;} 
+    #btmenu {cursor: pointer;}
+        #logomobile{height: 30px;
+                    width: 25px;}
+        .repartout{color: #061511;
+        font-family: 'Inter';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;}
+        .mderoulant:hover .deroulant {
+            display: block; /* Affiche le menu déroulant lors du survol */
+        }
+        
+        .deroulant a, .deroulant button {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #061511;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+        }
+        
+        .deroulant a:hover, .deroulant button:hover {
+            background-color: #f0f0f0;}
+                
 .hero {width: 100%;
         background-color: #B0E246;
         display: flex;
@@ -59,7 +105,8 @@ button {background-color: #FFE500;
         font-size: 1.5em;
         background-color:#18A0FB;
         color: #061511;
-        transform: rotate(-4.5deg);}  
+        transform: rotate(-4.5deg);} 
+        #texthero{height: 80px;}
         .labelmobile{background-color:#D9F7FA;
             height: 4%;
             }      
@@ -116,13 +163,13 @@ button {background-color: #FFE500;
              width: 60%;}
         
 
-#materiel{width: 100%;
+#materiel{;
         }    
         #machine{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            align-items: center;}
+            align-items: flex-start;}
             .electro{height: 10em;
                 width: 20em;}
         .electromenager{text-align: center;
@@ -131,10 +178,27 @@ button {background-color: #FFE500;
             background-color: white;
             border-radius: 12px;
             box-shadow: 0em 0.2em 0em rgba(0, 0, 0, 0.5);}
-            
+    .cercle-caroussel{display: flex;
+                    flex-direction: row;}
+    .cercle-caroussel-desktop{display: flex;
+        flex-direction: row;}
+    .cercle-caroussel-mobile{display: flex;
+        flex-direction: row;
+        align-items: center;}
+        .fleche{border-radius: 40px;
+            height: 50px;
+            width: 50px;} 
+        .rondvert{width: 16px;
+            height: 16px;
+            border-radius: 100px;
+            background-color: #B0E246;}
+
+
+
+
 #temoignage{
     background-color: #D9F7FA;}
-    #raport{
+    #raport{border-radius: 16px;
             padding-right:5% ;
              display: flex;
             justify-content: center;
@@ -142,18 +206,12 @@ button {background-color: #FFE500;
         .madame{padding-top: 1.5em;
                 height: 35%;
                 width: 40%;}
-        .parler{height:10%;
-                width: 40%;
-                margin: -1.5em;
-                padding-top: 1em;
-                padding-bottom:3em ;
-                padding-left: 1em;
-                text-align: left;
-                border-top-right-radius: 25px;
-                border-bottom-right-radius:25px ;
+        .parler{margin: -1.5em;
+                padding:40px ;
                 background-color: white;
                 display: flex;
-                flex-direction: column;}
+                flex-direction: column;
+                 text-align: left;}
                 #ligne {background-color: #B0E246;
                         height: 0.1em;
                         width: 80%;}
@@ -188,11 +246,7 @@ button {background-color: #FFE500;
         transform: rotate(-4.5deg);}    
     
 .services{background-color: #B0E246;}
-    #serv{margin-top: 3em;
-        margin-bottom: 3em;
-        padding-left: 10%;
-        padding-right:10% ;
-        height: 2em;        
+    #serv{        
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -218,12 +272,27 @@ button {background-color: #FFE500;
         .carte{margin-left: 5%;
             margin-right: 15%;}
         li{margin-left: 5%;}
-
-        @media (max-width: 1440px)  {
+        .infopratoquemobile{display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;}
+        .lignenoire{
+            width: 254px;
+            height: 1px;
+            stroke: #55701C;}
+        .boutiquemobile{border-radius: 8px;
+            background: #FFF;            
+            box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            padding: 20px 30px;
+            align-items: center;
+            gap: 10px;
+            align-self: stretch;}
             
             
             
-        }
+        
         @media (min-width: 360px) {
             .menumobile{display: none;}
             .labelmobile{display: none;}
@@ -231,8 +300,10 @@ button {background-color: #FFE500;
             #lignemobile{display: none;}
             .statmobile{display: none;}
             #prkmobile{display: none;}
-
-    }
+            .cercle-caroussel-mobile{display: none;}
+            .boutiquemobile{display: none;}
+            .infopratoquemobile{display: none;}
+        }
 
 
         @media (max-width: 360px) {
@@ -241,6 +312,8 @@ button {background-color: #FFE500;
                 margin: 0;
                 padding: 0;}
 
+            section{padding: 30px 30px;}    
+            
             .menu{display: none;}
             #qualiRepar{display: none;}
             #atelier{display: none;}
@@ -248,7 +321,11 @@ button {background-color: #FFE500;
             .etiquette1{display: none;}
             .stat{display: none;}
             .prk{display: none;}
-        
+            .carte{display: none;}
+            .madame{display: none;}
+            .cercle-caroussel-desktop{display: none;}
+            #boutique{display: none;}
+
             .hero{flex-direction: column;
                 padding: 40px 30px;}
 
@@ -279,6 +356,18 @@ button {background-color: #FFE500;
             #materiel{background-color: #B0E246;
             flex-direction: column;
             align-items: center;}
+
+            #serv{flex-direction: column;}
+
+            #temoignage{display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            background-color: #D9F7FA;}
+
+            .item1{order:1;}
+            .item2{order:3;}
+            .item3{order:2;}
             
             }
             
