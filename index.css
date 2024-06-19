@@ -64,7 +64,7 @@ button {display: flex;
     }
     .logorepar{display: flex;
                 flex-direction: row;
-            gap: none;} 
+            } 
     .mderoulant{position: relative;} 
     #btmenu {cursor: pointer;}
         #logomobile{height: 30px;
