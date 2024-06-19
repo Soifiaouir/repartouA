@@ -22,7 +22,7 @@ h2{font-family: 'jost';
 
 a{color: #061511;
         text-decoration: none;}
-section{
+section{width:100%;
         padding: 120px 140px;}
 
 
@@ -309,7 +309,7 @@ button {display: flex;
             
             
         
-        @media (min-width: 360px) {
+        @media (min-width: 390px) {
             .menumobile{display: none;}
             .labelmobile{display: none;}
             #prkmobile{display: none;}
@@ -322,7 +322,7 @@ button {display: flex;
         }
 
 
-        @media (max-width: 360px) {
+        @media (max-width: 390px) {
             body {
                 width: 100%;
                 margin: 0;
