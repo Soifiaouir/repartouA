@@ -22,7 +22,7 @@ h2{font-family: 'jost';
 
 a{color: #061511;
         text-decoration: none;}
-section{width: 100%;
+section{
         padding: 120px 140px;}
 
 
@@ -163,25 +163,36 @@ button {display: flex;
              width: 60%;}
         
 
-#materiel{;
-        }    
+
         #machine{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            align-items: flex-start;}
-            .electro{height: 10em;
-                width: 20em;}
-        .electromenager{text-align: center;
+            align-items: flex-start;
+            gap:40px;}
+            .electro{height: 180px;
+                width:320px;}
+        .electromenager{padding: 20px;
             display: flex;
+            height: 360px;
+            width: 360px;
             flex-direction: column;
+            align-items: center;
+            gap: 40px;
             background-color: white;
             border-radius: 12px;
             box-shadow: 0em 0.2em 0em rgba(0, 0, 0, 0.5);}
+
+
+    .mrk{width: 200px;
+        height: 85px;}
+    .caché{display: none;}
     .cercle-caroussel{display: flex;
-                    flex-direction: row;}
+                    flex-direction: row;
+                align-items: center;}
     .cercle-caroussel-desktop{display: flex;
-        flex-direction: row;}
+        flex-direction: row;
+        align-items: center;}
     .cercle-caroussel-mobile{display: flex;
         flex-direction: row;
         align-items: center;}
@@ -192,8 +203,12 @@ button {display: flex;
             height: 16px;
             border-radius: 100px;
             background-color: #B0E246;}
-
-
+    .imgC{display: flex;
+    flex-direction: row;}
+    .caroussel{display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;}           
 
 
 #temoignage{
@@ -201,11 +216,14 @@ button {display: flex;
     #raport{border-radius: 16px;
             padding-right:5% ;
              display: flex;
-            justify-content: center;
-            width: 90%;}
-        .madame{padding-top: 1.5em;
-                height: 35%;
-                width: 40%;}
+             flex-direction: row;
+            align-items: center;
+            }
+        .madame{height: 355px;
+                width: 630px;}
+        .temoignageC{display: flex;
+                    flex-direction: column;
+                    gap :40px;}
         .parler{margin: -1.5em;
                 padding:40px ;
                 background-color: white;
@@ -216,9 +234,7 @@ button {display: flex;
                         height: 0.1em;
                         width: 80%;}
                 #signature{color: #B0E246;}
-
-.prk{margin-top: 2em;
-    width: 100%;}
+       
     #pourquoi{display: flex;
             flex-direction: row;
         justify-content: center;}
@@ -235,9 +251,12 @@ button {display: flex;
             .object{height: 35%;
                 width: 30%;}
 
-#prkmobile{background-color: #B0E246;
+#prkmobile{width: 100%;
+    background-color: #B0E246;
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;}
 
     #dechets{padding-top: 0.7em;
         height: 2em;
@@ -250,8 +269,7 @@ button {display: flex;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        gap: 20px;
-         width: 80%;}
+        gap: 20px;}
         .serv{height: 130px;
             width: 274px;
             display: flex;
@@ -263,15 +281,13 @@ button {display: flex;
             color: #061511;
             border-radius: 8px;
             box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08);}
-        .picto{height: 3em;
-                width: 3em;
-                float: left;
-                margin-top: 3em;}
+        .picto{height: 24px;
+            width:24px;}
     #boutique{padding-top: 3em;}
-        h3{margin-left: 5%;}
-        .carte{margin-left: 5%;
-            margin-right: 15%;}
-        li{margin-left: 5%;}
+        
+        .carte{height:257px;
+            width:1160px;}
+       
         .infopratoquemobile{display: flex;
         flex-direction: column;
         align-items: center;
@@ -289,7 +305,7 @@ button {display: flex;
             align-items: center;
             gap: 10px;
             align-self: stretch;}
-            
+        h4{color: #55701C;}  
             
             
         
@@ -364,11 +380,24 @@ button {display: flex;
             gap: 30px;
             align-items: center;
             background-color: #D9F7FA;}
+            #materiel{width: 100%;
+                padding: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center; }    
+            .mrk{width: 193px;
+                height: 221px;}
+            .electromenager{
+                flex-direction: column;
+                height: 360px;
+                width:300px;}
 
             .item1{order:1;}
             .item2{order:3;}
             .item3{order:2;}
             
+            .objet{width: 270px;
+                height: 200px;}
             }
             
 
