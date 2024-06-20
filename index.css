@@ -384,8 +384,7 @@ button {display: flex;
                 padding: 30px;
                     display: flex;
                     flex-direction: column;
-                    justify-content: flex-st;
-                    align-items: cent; }    
+                     }    
             .mrk{width: 193px;
                 height: 221px;}
             .electromenager{
