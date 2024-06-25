@@ -5,8 +5,7 @@ body{background-color: #FFF5D0;
     color: #061511;
     font-family: 'tomorow';
     font-size: 18px;
-    
-   
+    width: 1440px;
 }
 
 
@@ -15,36 +14,40 @@ h1{font-family: 'jost';
     font-size: 1.5em;
     text-align: left;
     margin-top: 1.2em;
-    margin-bottom: 1.2em;}
+    margin-bottom: 1.2em;
+}
 
 h2{font-family: 'jost';
     padding-left: 5em;
-    font-size: 1.2em;}
+    font-size: 1.2em;
+}
 
 a{color: #061511;
-        text-decoration: none;}
-section{width:100%;
-        padding: 120px 140px;}
+        text-decoration: none;
+    }
+section{padding: 120px 140px;
+    }
 
 
 button {display: flex;
+    align-items: center;
     height: 40px;
     padding: 6px 20px;
-    align-items: center;
     gap: 20px;
     border-radius: 8px;
     border: 1px solid #55701C;
     background: #FFE500;
-    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08);}
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08);
+}
 
 
-.menu{width: auto;
+.menu{max-width: 1440px;
     padding: 0px 40px ;
     font-family: 'tomorow-thin', sans-serif;
     background-color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;}
     #search { border-radius: 8px;
         border-color: #55701C;}
@@ -92,11 +95,11 @@ button {display: flex;
         .deroulant a:hover, .deroulant button:hover {
             background-color: #f0f0f0;}
                 
-.hero {width: 100%;
-        background-color: #B0E246;
+.hero {background-color: #B0E246;
         display: flex;
         flex-direction: row;
-        gap:60px}
+        gap:6%;
+}
         #hero-left{width: 100%;}
         #hero-right{width: 100%;}
         .Cassé {
@@ -122,8 +125,8 @@ button {display: flex;
         #atelier {
         position: absolute;
         border-radius: 16px;
-        width: 550px;
-        Height:385px;}
+        width: auto;
+        Height:auto;}
         #Robert {padding: 40px;
         transition: transform 0.5s ease-in-out;}
 
@@ -309,7 +312,7 @@ button {display: flex;
             
             
         
-        @media (min-width: 390px) {
+        @media (min-width: 769px) {
             .menumobile{display: none;}
             .labelmobile{display: none;}
             #prkmobile{display: none;}
@@ -322,7 +325,7 @@ button {display: flex;
         }
 
 
-        @media (max-width: 390px) {
+        @media (max-width: 768px) {
             body {
                 width: 100%;
                 margin: 0;
