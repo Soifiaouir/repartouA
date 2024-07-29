@@ -1,37 +1,35 @@
-body{
+body {
     background-color: #FFF5D0;
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
     color: #061511;
-    font-family: 'tomorow';
+    font-family: 'tomorow', sans-serif;
     font-size: 18px;
-    width: 1440px;
 }
 
-h1{
-    font-family: 'jost';
+h1 {
+    font-family: 'jost', sans-serif;
     font-size: 1.5em;
     text-align: left;
     margin-top: 1.2em;
     margin-bottom: 1.2em;
 }
 
-h2{
-    font-family: 'jost';
+h2 {
+    font-family: 'jost', sans-serif;
     padding-left: 5em;
     font-size: 1.2em;
 }
 
-a{
+a {
     color: #061511;
-        text-decoration: none;
-    }
+    text-decoration: none;
+}
 
-section{
+section {
     padding: 120px 140px;
-    }
-
+}
 
 button {
     display: flex;
@@ -45,9 +43,9 @@ button {
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08);
 }
 
-.menu{
+.menu {
     max-width: 1440px;
-    padding: 0px 40px ;
+    padding: 0px 40px;
     font-family: 'tomorow-thin', sans-serif;
     background-color: white;
     display: flex;
@@ -55,84 +53,126 @@ button {
     justify-content: space-evenly;
     align-items: center;
 }
-    #search { 
-        border-radius: 8px;
-        border-color: #55701C;
-    }
 
-    .deroulant{display: none;
-        position: absolute;
-        top: 100%; /* Place le menu déroulant juste en dessous de l'élément parent */
-        right: 0; /* Aligne le menu déroulant à droite */
-        background-color: white;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        z-index: 1000; /* Assure que le menu déroulant est au-dessus des autres éléments */
-    }
-    .logorepar{display: flex;
-                flex-direction: row;
-            } 
-    .mderoulant{position: relative;} 
-    #btmenu {cursor: pointer;}
-        #logomobile{height: 30px;
-                    width: 25px;}
-        .repartout{color: #061511;
-        font-family: 'Inter';
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;}
-        .mderoulant:hover .deroulant {
-            display: block; /* Affiche le menu déroulant lors du survol */
-        }
-        
-        .deroulant a, .deroulant button {
-            display: block;
-            padding: 10px 20px;
-            text-decoration: none;
-            color: #061511;
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-        }
-        
-        .deroulant a:hover, .deroulant button:hover {
-            background-color: #f0f0f0;}
-                
-.hero {background-color: #B0E246;
-        display: flex;
-        flex-direction: row;
-        gap:6%;
+#search {
+    border-radius: 8px;
+    border-color: #55701C;
 }
-        #hero-left{width: 100%;}
-        #hero-right{width: 100%;}
-        .Cassé {
-        position: absolute;
-        width:225px ;
-        font-family:'jost' ;
-        font-size: 1.5em;
-        background-color:#18A0FB;
-        color: #061511;
-        transform: rotate(-4.5deg);} 
-        #texthero{height: 80px;}
-        .labelmobile{background-color:#D9F7FA;
-            height: 4%;
-            }      
-        #bero {margin-top: 2em;
-            position: inherit;
-            margin-bottom: 2em;}
-        #qualiRepar {padding: 20px;
-            background-color: #D9F7FA;
-            border-radius: 16px;
-            display: flex;
-            flex-direction: row;}
-        #atelier {
-        position: absolute;
-        border-radius: 16px;
-        width: auto;
-        Height:auto;}
-        #Robert {padding: 40px;
-        transition: transform 0.5s ease-in-out;}
 
-.stat{margin-top:-6em;
+.deroulant {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logorepar {
+    display: flex;
+    flex-direction: row;
+}
+
+.mderoulant {
+    position: relative;
+}
+
+#btmenu {
+    cursor: pointer;
+}
+
+#logomobile {
+    height: 30px;
+    width: 25px;
+}
+
+.repartout {
+    color: #061511;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.mderoulant:hover .deroulant {
+    display: block;
+}
+
+.deroulant a, .deroulant button {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #061511;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.deroulant a:hover, .deroulant button:hover {
+    background-color: #f0f0f0;
+}
+
+.hero {
+    background-color: #B0E246;
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+}
+
+#hero-left {
+    width: 100%;
+}
+
+#hero-right {
+    width: 100%;
+}
+
+.Cassé {
+    position: absolute;
+    width: 225px;
+    font-family: 'jost', sans-serif;
+    font-size: 1.5em;
+    background-color: #18A0FB;
+    color: #061511;
+    transform: rotate(-4.5deg);
+}
+
+#texthero {
+    height: 80px;
+}
+
+.labelmobile {
+    background-color: #D9F7FA;
+    height: 4%;
+}
+
+#bero {
+    margin-top: 2em;
+    position: inherit;
+    margin-bottom: 2em;
+}
+
+#qualiRepar {
+    padding: 20px;
+    background-color: #D9F7FA;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+#atelier {
+    position: absolute;
+    border-radius: 16px;
+    width: auto;
+    height: auto;
+}
+
+#Robert {
+    padding: 40px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.stat {
+    margin-top: -6em;
     position: absolute;
     padding: 40px;
     margin-left: 10%;
@@ -144,278 +184,414 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 2em;}
-    .chiffre{padding-top: 2em;
-        display:flex;
-    flex-direction: row;}
-    .etiquette{  padding: 1em; 
-        height: 1em;
-        width:2em ;
-        font-size: 1.2em;  
-        background-color:#18A0FB;
-        color: #061511;
-        transform: rotate(-4.5deg);}
+    padding-top: 2em;
+}
 
-.statmobile{padding: 30px; 
+.chiffre {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+}
+
+.etiquette {
+    padding: 1em;
+    height: 1em;
+    width: 2em;
+    font-size: 1.2em;
+    background-color: #18A0FB;
+    color: #061511;
+    transform: rotate(-4.5deg);
+}
+
+.statmobile {
+    padding: 30px;
     width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color:white;}
-        .chiffremobile{width: 50%;
-        padding: 10px;}
-        #lignemobile{background-color:#B0E246;
-            height: 1px;           
-             width: 60%;}
-        
-
-
-        #machine{
-            display: flex;
-            flex-direction: row;
-            justify-content:flex-start;
-            align-items:center;
-            gap:40px;}
-            .electro{height: 180px;
-                width:320px;}
-        .electromenager{padding: 20px;
-            display: flex;
-            height: 360px;
-            flex-direction: column;
-            align-items: center;
-            gap: 40px;
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0em 0.2em 0em rgba(0, 0, 0, 0.5);}
-
-
-    .mrk{width: 200px;
-        height: 85px;}
-    .caché{display: none;}
-    .cercle-caroussel{display: flex;
-                    flex-direction: row;
-                align-items: center;}
-    .cercle-caroussel-desktop{display: flex;
-        flex-direction: row;
-        align-items: center;}
-    .cercle-caroussel-mobile{display: flex;
-        flex-direction: row;
-        align-items: center;}
-        .fleche{border-radius: 40px;
-            height: 50px;
-            width: 50px;} 
-        .rondvert{width: 16px;
-            height: 16px;
-            border-radius: 100px;
-            background-color: #B0E246;}
-    .imgC{display: flex;
-    flex-direction: row;}
-    .caroussel{display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;}           
+    background-color: white;
+}
 
+.chiffremobile {
+    width: 50%;
+    padding: 10px;
+}
 
-#temoignage{
-    background-color: #D9F7FA;}
-    #raport{border-radius: 16px;
-            padding-right:5% ;
-             display: flex;
-             flex-direction: row;
-            align-items: center;
-            }
-        .madame{height: 355px;
-                width: 630px;}
-        .temoignageC{display: flex;
-                    flex-direction: column;
-                    gap :40px;}
-        .parler{margin: -1.5em;
-                padding:40px ;
-                background-color: white;
-                display: flex;
-                flex-direction: column;
-                 text-align: left;}
-                #ligne {background-color: #B0E246;
-                        height: 0.1em;
-                        width: 80%;}
-                #signature{color: #B0E246;}
-       
-    #pourquoi{display: flex;
-            flex-direction: row;
-        justify-content: center;}
-        #prkG{height: 25%;
-            width: 40%;
-            text-align: left;}
-            #textprk{margin-top: 2em;}
-            .prkb{
-                margin-top: 5em;
-                height: 2.5em;
-            border-radius: 5px;}
-        #prkD{height: 25%;
-        width: 40%;}
-            .object{height: 35%;
-                width: 30%;}
+#lignemobile {
+    background-color: #B0E246;
+    height: 1px;
+    width: 60%;
+}
 
-#prkmobile{width: 100%;
+#machine {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+.electro {
+    height: 180px;
+    width: 320px;
+}
+
+.electromenager {
+    padding: 20px;
+    display: flex;
+    height: 360px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0em 0.2em 0em rgba(0, 0, 0, 0.5);
+}
+
+.mrk {
+    width: 200px;
+    height: 85px;
+}
+
+.caché {
+    display: none;
+}
+
+.cercle-caroussel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cercle-caroussel-desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cercle-caroussel-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fleche {
+    border-radius: 40px;
+    height: 50px;
+    width: 50px;
+}
+
+.rondvert {
+    width: 16px;
+    height: 16px;
+    border-radius: 100px;
+    background-color: #B0E246;
+}
+
+.imgC {
+    display: flex;
+    flex-direction: row;
+}
+
+.caroussel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+#temoignage {
+    background-color: #D9F7FA;
+}
+
+#raport {
+    border-radius: 16px;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.madame {
+    height: 355px;
+    width: 630px;
+}
+
+.temoignageC {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.parler {
+    margin: -1.5em;
+    padding: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#ligne {
+    background-color: #B0E246;
+    height: 0.1em;
+    width: 80%;
+}
+
+#signature {
+    color: #B0E246;
+}
+
+#pourquoi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#prkG {
+    height: 25%;
+    width: 40%;
+    text-align: left;
+}
+
+#textprk {
+    margin-top: 2em;
+}
+
+.prkb {
+    margin-top: 5em;
+    height: 2.5em;
+    border-radius: 5px;
+}
+
+#prkD {
+    height: 25%;
+    width: 40%;
+}
+
+.object {
+    height: 35%;
+    width: 30%;
+}
+
+#prkmobile {
+    width: 100%;
     background-color: #B0E246;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;}
+    gap: 20px;
+}
 
-    #dechets{padding-top: 0.7em;
-        height: 2em;
-        width: 6em;
-        background-color: #18A0FB;
-        transform: rotate(-4.5deg);}    
-    
-.services{background-color: #B0E246;}
-    #serv{        
+#dechets {
+    padding-top: 0.7em;
+    height: 2em;
+    width: 6em;
+    background-color: #18A0FB;
+    transform: rotate(-4.5deg);
+}
+
+.services {
+    background-color: #B0E246;
+}
+
+#serv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.serv {
+    height: 130px;
+    width: 274px;
+    display: flex;
+    padding: 20px 10px 20px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    color: #061511;
+    border-radius: 8px;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08);
+}
+
+.picto {
+    height: 24px;
+    width: 24px;
+}
+
+#boutique {
+    padding-top: 3em;
+}
+
+.carte {
+    height: 257px;
+    width: 1160px;
+}
+
+.infopratoquemobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.lignenoire {
+    width: 254px;
+    height: 1px;
+    stroke: #55701C;
+}
+
+.boutiquemobile {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+h4 {
+    color: #55701C;
+}
+
+/* Media Queries */
+
+@media (min-width: 769px) {
+    body {
+        width: 1440px;
+    }
+
+    .menumobile, .labelmobile, #prkmobile, #lignemobile, .statmobile, .cercle-caroussel-mobile, .boutiquemobile, .infopratoquemobile {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        padding: 30px 30px;
+    }
+
+    .menu, #qualiRepar, #atelier, #texthero, .etiquette1, .stat, .prk, .carte, .madame, .cercle-caroussel-desktop, #boutique {
+        display: none;
+    }
+
+    .menumobile {
+        width: 95%;
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        gap: 20px;}
-        .serv{height: 130px;
-            width: 274px;
-            display: flex;
-            padding: 20px 10px 20px 30px;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-            background-color:white;
-            color: #061511;
-            border-radius: 8px;
-            box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08);}
-        .picto{height: 24px;
-            width:24px;}
-    #boutique{padding-top: 3em;}
-        
-        .carte{height:257px;
-            width:1160px;}
-       
-        .infopratoquemobile{display: flex;
+        padding: 6px 9px;
+        justify-content: center;
+        align-items: center;
+        gap: 73px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 30px;
+        max-width: 95%;
+    }
+
+    #bero {
+        padding-bottom: 0%;
+    }
+
+    #hero-left {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 30px;}
-        .lignenoire{
-            width: 254px;
-            height: 1px;
-            stroke: #55701C;}
-        .boutiquemobile{border-radius: 8px;
-            background: #FFF;            
-            box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08);
-            display: flex;
-            flex-direction: column;
-            padding: 20px 30px;
-            align-items: center;
-            gap: 10px;
-            align-self: stretch;}
-        h4{color: #55701C;}  
-            
-            
-        
-        @media (min-width: 769px) {
-            .menumobile{display: none;}
-            .labelmobile{display: none;}
-            #prkmobile{display: none;}
-            #lignemobile{display: none;}
-            .statmobile{display: none;}
-            #prkmobile{display: none;}
-            .cercle-caroussel-mobile{display: none;}
-            .boutiquemobile{display: none;}
-            .infopratoquemobile{display: none;}
-        }
+    }
 
+    #hero-right {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        flex-direction: row;
+    }
 
-        @media (max-width: 768px) {
-            body {
-                width: 100%;
-                margin: 0;
-                padding: 0;}
+    #Robert {
+        height: 328px;
+        width: 228px;
+        padding: 0%;
+    }
 
-            section{padding: 30px 30px;}    
-            
-            .menu{display: none;}
-            #qualiRepar{display: none;}
-            #atelier{display: none;}
-            #texthero{display:none;}
-            .etiquette1{display: none;}
-            .stat{display: none;}
-            .prk{display: none;}
-            .carte{display: none;}
-            .madame{display: none;}
-            .cercle-caroussel-desktop{display: none;}
-            #boutique{display: none;}
+    .statmobile {
+        display: flex;
+        flex-direction: column;
+    }
 
+    #machine {
+        flex-direction: column;
+        gap: 30px;
+    }
 
-            .menumobile{
-                width: 95%;
-                display: flex;
-                padding: 6px 9px;
-                justify-content: center;
-                align-items: center;
-                gap: 73px;}
+    .butons {
+        flex-direction: column;
+    }
 
-            .hero{flex-direction: column;
-                padding: 40px 30px;
-                max-width: 95%;}
+    .electromenager {
+        background-color: #D9F7FA;
+    }
 
-            #bero{padding-bottom: 0%;}
+    .materiel {
+        background-color: #B0E246;
+        flex-direction: column;
+        align-items: center;
+    }
 
-            #hero-left{display: flex;
-            flex-direction: column;
-            align-items: center;}
+    #serv {
+        flex-direction: column;
+    }
 
-            #hero-right{margin: 0%;
-                padding: 0%;
-                display: flex;
-                flex-direction: row;}
+    #temoignage {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        background-color: #D9F7FA;
+    }
 
-            #Robert{height: 328px;
-                width: 228px;
-                padding: 0%;}
+    .materiel {
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
 
-            .statmobile{display: flex;
-            flex-direction: column;}
+    .mrk {
+        width: 193px;
+        height: 221px;
+    }
 
-            #machine{flex-direction: column;
-                gap: 30px;}
+    .electromenager {
+        flex-direction: column;
+        height: 360px;
+        width: 300px;
+    }
 
-            .butons{flex-direction: column;}
-            .electromenager{background-color:  #D9F7FA;}
+    .item1 {
+        order: 1;
+    }
 
-            .materiel{background-color: #B0E246;
-            flex-direction: column;
-            align-items: center;}
+    .item2 {
+        order: 3;
+    }
 
-            #serv{flex-direction: column;}
+    .item3 {
+        order: 2;
+    }
 
-            #temoignage{display: flex;
-            flex-direction: column;
-            gap: 30px;
-            align-items: center;
-            background-color: #D9F7FA;}
-            .materiel{width: 100%;
-                padding: 30px;
-                    display: flex;
-                    flex-direction: column;
-                     }    
-            .mrk{width: 193px;
-                height: 221px;}
-            .electromenager{
-                flex-direction: column;
-                height: 360px;
-                width:300px;}
-
-            .item1{order:1;}
-            .item2{order:3;}
-            .item3{order:2;}
-            
-            .objet{width: 270px;
-                height: 200px;}
-            }
-            
-
-
-        
-            
+    .objet {
+        width: 270px;
+        height: 200px;
+    }
+}
