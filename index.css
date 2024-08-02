@@ -243,7 +243,8 @@ button {
 }
 
 .mrk {
-    height: 85px;
+    height: auto;
+    width: 200px;
 }
 
 .caché {
