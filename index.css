@@ -1,15 +1,21 @@
+/* Styles généraux */
 body {
     background-color: #FFF5D0;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     color: #061511;
-    font-family: 'tomorow', sans-serif;
+    font-family: 'tomorow';
     font-size: 18px;
 }
 
+section {
+    padding: 20px 30px 20px 30px;
+}
+
+
 h1 {
-    font-family: 'jost', sans-serif;
+    font-family: 'jost';
     font-size: 1.5em;
     text-align: left;
     margin-top: 1.2em;
@@ -17,7 +23,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'jost', sans-serif;
+    font-family: 'jost';
     padding-left: 5em;
     font-size: 1.2em;
 }
@@ -25,10 +31,6 @@ h2 {
 a {
     color: #061511;
     text-decoration: none;
-}
-
-section {
-    padding: 120px 140px;
 }
 
 button {
@@ -44,7 +46,7 @@ button {
 }
 
 .menu {
-    max-width: 1440px;
+    max-width: 1400px;
     padding: 0px 40px;
     font-family: 'tomorow-thin', sans-serif;
     background-color: white;
@@ -64,7 +66,6 @@ button {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
@@ -84,14 +85,15 @@ button {
 
 #logomobile {
     height: 30px;
-    width: 25px;
 }
 
 .repartout {
     color: #061511;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-size: 18px;
+    font-style: normal;
     font-weight: 700;
+    line-height: normal;
 }
 
 .mderoulant:hover .deroulant {
@@ -118,18 +120,13 @@ button {
     gap: 6%;
 }
 
-#hero-left {
-    width: 100%;
-}
-
-#hero-right {
+#hero-left, #hero-right {
     width: 100%;
 }
 
 .Cassé {
     position: absolute;
-    width: 225px;
-    font-family: 'jost', sans-serif;
+    font-family: 'jost';
     font-size: 1.5em;
     background-color: #18A0FB;
     color: #061511;
@@ -142,7 +139,6 @@ button {
 
 .labelmobile {
     background-color: #D9F7FA;
-    height: 4%;
 }
 
 #bero {
@@ -162,8 +158,6 @@ button {
 #atelier {
     position: absolute;
     border-radius: 16px;
-    width: auto;
-    height: auto;
 }
 
 #Robert {
@@ -178,13 +172,12 @@ button {
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 15px;
-    width: 80%;
-    height: 8em;
     background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 2em;
+    width: 80%;
+    height :100px;
 }
 
 .chiffre {
@@ -196,7 +189,6 @@ button {
 .etiquette {
     padding: 1em;
     height: 1em;
-    width: 2em;
     font-size: 1.2em;
     background-color: #18A0FB;
     color: #061511;
@@ -205,7 +197,6 @@ button {
 
 .statmobile {
     padding: 30px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,27 +204,30 @@ button {
 }
 
 .chiffremobile {
-    width: 50%;
     padding: 10px;
 }
 
 #lignemobile {
     background-color: #B0E246;
     height: 1px;
-    width: 60%;
 }
 
+#materiel{
+    padding-top: 100px;
+}
 #machine {
+    margin-top: 100px;
     display: flex;
+    height: 40%;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 80px;
+
 }
 
 .electro {
     height: 180px;
-    width: 320px;
 }
 
 .electromenager {
@@ -249,7 +243,6 @@ button {
 }
 
 .mrk {
-    width: 200px;
     height: 85px;
 }
 
@@ -278,11 +271,9 @@ button {
 .fleche {
     border-radius: 40px;
     height: 50px;
-    width: 50px;
 }
 
 .rondvert {
-    width: 16px;
     height: 16px;
     border-radius: 100px;
     background-color: #B0E246;
@@ -314,7 +305,6 @@ button {
 
 .madame {
     height: 355px;
-    width: 630px;
 }
 
 .temoignageC {
@@ -335,7 +325,6 @@ button {
 #ligne {
     background-color: #B0E246;
     height: 0.1em;
-    width: 80%;
 }
 
 #signature {
@@ -350,7 +339,6 @@ button {
 
 #prkG {
     height: 25%;
-    width: 40%;
     text-align: left;
 }
 
@@ -366,16 +354,13 @@ button {
 
 #prkD {
     height: 25%;
-    width: 40%;
 }
 
 .object {
     height: 35%;
-    width: 30%;
 }
 
 #prkmobile {
-    width: 100%;
     background-color: #B0E246;
     display: flex;
     flex-direction: column;
@@ -386,7 +371,6 @@ button {
 #dechets {
     padding-top: 0.7em;
     height: 2em;
-    width: 6em;
     background-color: #18A0FB;
     transform: rotate(-4.5deg);
 }
@@ -404,7 +388,6 @@ button {
 
 .serv {
     height: 130px;
-    width: 274px;
     display: flex;
     padding: 20px 10px 20px 30px;
     justify-content: center;
@@ -418,7 +401,6 @@ button {
 
 .picto {
     height: 24px;
-    width: 24px;
 }
 
 #boutique {
@@ -427,7 +409,6 @@ button {
 
 .carte {
     height: 257px;
-    width: 1160px;
 }
 
 .infopratoquemobile {
@@ -438,7 +419,6 @@ button {
 }
 
 .lignenoire {
-    width: 254px;
     height: 1px;
     stroke: #55701C;
 }
@@ -459,50 +439,58 @@ h4 {
     color: #55701C;
 }
 
-/* Media Queries */
-
-@media (min-width: 769px) {
-    body {
-        width: 1440px;
+@media (min-width: 745px) {
+    .menumobile {
+        display: none;
     }
 
-    .menumobile, .labelmobile, #prkmobile, #lignemobile, .statmobile, .cercle-caroussel-mobile, .boutiquemobile, .infopratoquemobile {
+    .labelmobile {
+        display: none;
+    }
+
+    #prkmobile {
+        display: none;
+    }
+
+    #lignemobile {
+        display: none;
+    }
+
+    .statmobile {
+        display: none;
+    }
+
+    #prkmobile {
+        display: none;
+    }
+
+    .cercle-caroussel-mobile {
+        display: none;
+    }
+
+    .boutiquemobile {
+        display: none;
+    }
+
+    .infopratoquemobile {
         display: none;
     }
 }
-
-@media (max-width: 768px) {
-    body {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    section {
-        padding: 30px 30px;
-    }
-
-    .menu, #qualiRepar, #atelier, #texthero, .etiquette1, .stat, .prk, .carte, .madame, .cercle-caroussel-desktop, #boutique {
+/* Media Queries */
+@media (max-width: 390px) {
+    /* Styles pour mobile */
+    .menu, .cercle-caroussel-desktop, .stat, .prk, .carte, .madame, #boutique, #qualiRepar, #atelier, #texthero, .etiquette1 {
         display: none;
     }
 
-    .menumobile {
-        width: 95%;
+    .menumobile, .statmobile, .cercle-caroussel-mobile, .electromenager, .materiel, #temoignage, .boutiquemobile {
         display: flex;
-        padding: 6px 9px;
-        justify-content: center;
-        align-items: center;
-        gap: 73px;
     }
 
     .hero {
         flex-direction: column;
         padding: 40px 30px;
         max-width: 95%;
-    }
-
-    #bero {
-        padding-bottom: 0%;
     }
 
     #hero-left {
@@ -512,21 +500,121 @@ h4 {
     }
 
     #hero-right {
-        margin: 0%;
-        padding: 0%;
+        margin: 0;
+        padding: 0;
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+    }
+
+     .labelmobile{
+        display: none;
+
+        
+     }
+
+     #Robert {
+        max-width: 60%;
+        height: auto;
+        overflow: hidden;
+     }
+
+    #machine {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .butons {
+        flex-direction: column;
+    }
+
+    .electromenager {
+        background-color: #D9F7FA;
+    }
+
+    .materiel {
+        background-color: #B0E246;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #serv {
+        flex-direction: column;
+    }
+
+    #temoignage {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        background-color: #D9F7FA;
+    }
+
+    .materiel {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mrk.active{
+        overflow: hidden;
+    }
+
+    .electromenager {
+        flex-direction: column;
+        height: 360px;
+    }
+
+    .item1 {
+        order: 1;
+    }
+
+    .item2 {
+        order: 3;
+    }
+
+    .item3 {
+        order: 2;
+    }
+
+    .objet {
+        height: 200px;
+    }
+}
+
+
+@media (max-width: 744px) {
+    /* Styles pour tablette */
+    .menu, .cercle-caroussel-desktop, .stat, .prk, .carte, .madame, #boutique, #qualiRepar, #atelier, #texthero, .etiquette1 {
+        display: none;
+    }
+
+    .menumobile, .statmobile, .cercle-caroussel-mobile, .electromenager, .materiel, #temoignage, .boutiquemobile {
+        display: flex;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 30px;
+        max-width: 95%;
+    }
+
+    #hero-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero-right {
+        margin: 0;
+        padding: 0;
         display: flex;
         flex-direction: row;
     }
 
     #Robert {
         height: 328px;
-        width: 228px;
-        padding: 0%;
-    }
-
-    .statmobile {
-        display: flex;
-        flex-direction: column;
+        padding: 0;
     }
 
     #machine {
@@ -561,21 +649,18 @@ h4 {
     }
 
     .materiel {
-        width: 100%;
         padding: 30px;
         display: flex;
         flex-direction: column;
     }
 
     .mrk {
-        width: 193px;
         height: 221px;
     }
 
     .electromenager {
         flex-direction: column;
         height: 360px;
-        width: 300px;
     }
 
     .item1 {
@@ -591,7 +676,6 @@ h4 {
     }
 
     .objet {
-        width: 270px;
         height: 200px;
     }
 }
